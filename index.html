@@ -29,7 +29,8 @@
   </head>
 
   <body>
-    <div id="cartPreview float-left">
+    <div id="cartPreview " >
+      <h2 class="float-right"> test cart </h2>
       <!-- This will show the cart preview -->
     </div>
     <!-- top header section  -->
@@ -184,10 +185,10 @@
         <nav
           class="navbar navbar-custom d-flex justify-content-between align-items-center">
           <!-- Shop By Category Button -->
-          <button class="btn btn-category px-4 py-2" onclick="hideNavBar()">
+          <button class="btn btn-category px-4 py-2 " onclick="hideNavBar()">
             Shop By Category
-            <i class="fa-solid fa-chevron-down ml-2  d-none"></i>
-            <i class="fa-solid fa-chevron-up ml-2"></i>
+            <i class="fa-solid fa-chevron-down ml-2 ms-5 d-none"></i>
+            <i class="fa-solid fa-chevron-up ml-2 ms-5"></i>
           </button>
 
           <!-- Search Bar -->
@@ -208,7 +209,7 @@
               <i class="fa-solid fa-cart-shopping "></i>
             </button>
             
-            <span>(0)</span>
+            <span id="nbrOfcart">(0)</span>
           </div>
         </nav>
 
@@ -244,7 +245,7 @@
               </div>
 
               <!-- banner image -->
-              <div class="banner">
+              <div class="banner mt-5">
                 <a href="#">
                   <img
                     src="./assets/img/banner.jpg"
@@ -254,7 +255,7 @@
               </div>
               <!-- infomation section -->
 
-              <div class="information">
+              <div class="information mt-5 ms-2">
                 <div class="box-information">Information</div>
                 <div class="list-group">
                   <a class="list-group-item"
@@ -280,7 +281,7 @@
 
               <!-- Sale Banner -->
 
-              <div class=" sale-banner ">
+              <div class=" sale-banner mt-5 ">
 
                 <div class="item"><a href="#"><img
                       src="./assets/img/sale-banner.jpg"
@@ -386,7 +387,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="quickViewModalLabel">Quick View</h5>
+              <h5 class="modal-title" id="quickViewModalLabel"></h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal"
                 aria-label="Close"></button>
             </div>
@@ -396,9 +397,9 @@
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary"
+              <button type="button" class="btn btn-dark"
                 data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary"
+              <button type="button" class="btn btn-secondary"
                 id="addToCartModalBtn">Add to Cart</button>
             </div>
           </div>
@@ -407,10 +408,10 @@
 
       <!-- flash sale section -->
       <section class="flash-sale-countdown">
-        <div class="flash-sale-countdown-overlay">
+        <div class="flash-sale-countdown-overlay ">
           <div class="container">
             <div class="row">
-              <div class="flash-sale-leftside mt-5 text-light">
+              <div class="flash-sale-leftside mt-5">
                 <h2 class="text-center">Flash Sale</h2>
                 <p class="text-center">
                   Grab the Best Deals on Bathroom & Kitchen Essentials Now!
@@ -431,30 +432,29 @@
       <!-- footer section -->
       <footer class="footer">
         <div class="container">
-          <div class="header-container">
-
-            <div class="content_footer_top">
-              <div class="news-box container bg-dark">
-                <div class="text-light p-4 newsletter">
-                  <h5 class="text-uppercase ms-5">Subscribe To The
-                    NewsLetter</h5>
-                </div>
-                <form>
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      class="form-control col-md-5"
-                      id="email"
-                      placeholder="E-mail" />
+          <div class="header-container ">
+            <div class="content_footer_top ">
+              <div class="news-box container bg-dark ">
+                <div class="row">
+                  <div class="text-light p-4 newsletter">
+                    <h5 class="text-uppercase ms-5">Subscribe To The Newsletter</h5>
                   </div>
-                  <button type="submit"
-                    class="btn btn-danger col-md-2">Send</button>
-                </form>
+                  <form class="d-flex align-items-center">
+                    <div class="form-group me-2">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="E-mail" />
+                    </div>
+                    <button type="submit" class="btn btn-danger">Send</button>
+                  </form>
+                </div>
+                
               </div>
             </div>
-
-            <div class="inner-container">
-              <div class="content_footer_second">
+      
+              <div class="content_footer_second bg-light">
                 <div class="row d-flex">
                   <div class="footer-logo">
                     <img src="./assets/img/logo.png" alt="logo" />
@@ -462,25 +462,20 @@
                   <div class="footer-information">
                     <p>
                       There are many variations of passages of don't look even
-                      slightly believable. Various versions have evolved ation
-                      of
-                      have
-                      evolved have passages.
+                      slightly believable. Various versions have evolved ation of
+                      have evolved have passages.
                     </p>
                   </div>
                   <div class="footer-social-media d-flex">
                     <div class="facebook">
                       <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     </div>
-
                     <div class="twitter">
                       <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     </div>
-
                     <div class="google-plus">
                       <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
                     </div>
-
                     <div class="linkedin">
                       <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                     </div>
@@ -489,9 +484,8 @@
               </div>
             </div>
           </div>
-
-        </div>
       </footer>
+      
       <!-- bootsrap script -->
       <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -1,9 +1,8 @@
-
 // cart list item
-let cart=[]; 
+let cart = [];
 let sautePan = [
   {
-    id:1,
+    id: 1,
     title: "Arcu Vitae Imperdiet verdict",
     description:
       "Redefine your workday with the Palm Treo Pro smartphone. Perfectly balanced, you can respond to busi..",
@@ -17,7 +16,7 @@ let sautePan = [
       "https://opencart.templatemela.com/OPCADD2/OPC043/image/cache/catalog/18-220x278.jpg",
   },
   {
-    id:2,
+    id: 2,
     title: "Justo Neque Commodo Nisl",
     description:
       "Intel Core 2 Duo processor Powered by an Intel Core 2 Duo processor at speeds up to 2.16GHz, t..",
@@ -31,7 +30,7 @@ let sautePan = [
       "https://opencart.templatemela.com/OPCADD2/OPC043/image/cache/catalog/6-220x278.jpg",
   },
   {
-    id:3,
+    id: 3,
     title: "Mauris Blandit Vehicula",
     description:
       "Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel Mon..",
@@ -45,7 +44,7 @@ let sautePan = [
       "https://opencart.templatemela.com/OPCADD2/OPC043/image/cache/catalog/11-220x278.jpg",
   },
   {
-    id:4,
+    id: 4,
     title: "Phasellus Sit Amet Urna",
     description:
       "Canon's press material for the EOS 5D states that it 'defines (a) new D-SLR category', while we're n..",
@@ -59,7 +58,7 @@ let sautePan = [
       "https://opencart.templatemela.com/OPCADD2/OPC043/image/cache/catalog/4-220x278.jpg",
   },
   {
-    id:5,
+    id: 5,
     title: "Arcu Vitae Imperdiet verdict",
     description:
       "Redefine your workday with the Palm Treo Pro smartphone. Perfectly balanced, you can respond to busi..",
@@ -72,7 +71,7 @@ let sautePan = [
       "https://opencart.templatemela.com/OPCADD2/OPC043/image/cache/catalog/18-220x278.jpg",
   },
   {
-    id:6,
+    id: 6,
     title: "Faded Short Sleeves",
     description:
       "The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed speci..",
@@ -86,7 +85,7 @@ let sautePan = [
       "https://opencart.templatemela.com/OPCADD2/OPC043/image/cache/catalog/19-220x278.jpg",
   },
   {
-    id:7,
+    id: 7,
     title: "Integer Tempor Lacus Eget",
     description:
       "iPhone is a revolutionary new mobile phone that allows you to make a call by simply tapping a name o..",
@@ -100,7 +99,7 @@ let sautePan = [
       "https://opencart.templatemela.com/OPCADD2/OPC043/image/cache/catalog/19-220x278.jpg",
   },
   {
-    id:8,
+    id: 8,
     title: "Mauris Blandit Vehicula",
     description:
       "Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel Mon..",
@@ -115,7 +114,7 @@ let sautePan = [
   },
 
   {
-    id:9,
+    id: 9,
     title: "Phasellus Sit Amet Urna",
     description:
       "Canon's press material for the EOS 5D states that it 'defines (a) new D-SLR category', while we're n..",
@@ -129,7 +128,7 @@ let sautePan = [
       "https://opencart.templatemela.com/OPCADD2/OPC043/image/cache/catalog/4-220x278.jpg",
   },
   {
-    id:10,
+    id: 10,
     title: "Sem Nec Tristique Tempus run",
     description:
       "Unprecedented power. The next generation of processing technology has arrived. Built into the newest..",
@@ -143,7 +142,7 @@ let sautePan = [
       "https://opencart.templatemela.com/OPCADD2/OPC043/image/cache/catalog/20-220x278.jpg",
   },
   {
-    id:11,
+    id: 11,
     title: "Suspendisse Massa Nulla willa",
     description:
       "MacBook Air is ultrathin, ultraportable, and ultra unlike anything else. But you don’t lose in..",
@@ -157,7 +156,7 @@ let sautePan = [
       "https://opencart.templatemela.com/OPCADD2/OPC043/image/cache/catalog/17-220x278.jpg",
   },
   {
-    id:12,
+    id: 12,
     title: "Suspendisse Potenti",
     description:
       "Revolutionary multi-touch interface. iPod touch features the same multi-touch screen technology as..",
@@ -171,7 +170,7 @@ let sautePan = [
       "https://opencart.templatemela.com/OPCADD2/OPC043/image/cache/catalog/22-220x278.jpg",
   },
   {
-    id:13,
+    id: 13,
     title: "Tellus Eu Volutpat Varius",
     description:
       "Born to be worn. Clip on the worlds most wearable music player and take up to 240 songs with y..",
@@ -188,7 +187,7 @@ let sautePan = [
 
 let latestVersion = [
   {
-    id:1,
+    id: 1,
     title: "Arcu Vitae Imperdiet verdict",
     description:
       "Redefine your workday with the Palm Treo Pro smartphone. Perfectly balanced, you can respond to busi..",
@@ -202,7 +201,7 @@ let latestVersion = [
       "https://opencart.templatemela.com/OPCADD2/OPC043/image/cache/catalog/18-220x278.jpg",
   },
   {
-    id:2,
+    id: 2,
     title: "Justo Neque Commodo Nisl",
     description:
       "Intel Core 2 Duo processor Powered by an Intel Core 2 Duo processor at speeds up to 2.16GHz, t..",
@@ -216,7 +215,7 @@ let latestVersion = [
       "https://opencart.templatemela.com/OPCADD2/OPC043/image/cache/catalog/6-220x278.jpg",
   },
   {
-    id:3,
+    id: 3,
     title: "Mauris Blandit Vehicula",
     description:
       "Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel Mon..",
@@ -230,7 +229,7 @@ let latestVersion = [
       "https://opencart.templatemela.com/OPCADD2/OPC043/image/cache/catalog/11-220x278.jpg",
   },
   {
-    id:4,
+    id: 4,
     title: "Phasellus Sit Amet Urna",
     description:
       "Canon's press material for the EOS 5D states that it 'defines (a) new D-SLR category', while we're n..",
@@ -247,7 +246,7 @@ let latestVersion = [
 
 let bestsellerVersion = [
   {
-    id:1,
+    id: 1,
     title: "Justo Neque Commodo Nisl",
     description:
       "Intel Core 2 Duo processor Powered by an Intel Core 2 Duo processor at speeds up to 2.16GHz, t..",
@@ -261,7 +260,7 @@ let bestsellerVersion = [
       "https://opencart.templatemela.com/OPCADD2/OPC043/image/cache/catalog/6-220x278.jpg",
   },
   {
-    id:2,
+    id: 2,
     title: "Mauris Blandit Vehicula",
     description:
       "Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel Mon..",
@@ -275,7 +274,7 @@ let bestsellerVersion = [
       "https://opencart.templatemela.com/OPCADD2/OPC043/image/cache/catalog/11-220x278.jpg",
   },
   {
-    id:3,
+    id: 3,
     title: "Phasellus Sit Amet Urna",
     description:
       "Canon's press material for the EOS 5D states that it 'defines (a) new D-SLR category', while we're n..",
@@ -292,7 +291,7 @@ let bestsellerVersion = [
 
 let specialVersion = [
   {
-    id:1,
+    id: 1,
     title: "Mauris Blandit Vehicula",
     description:
       "Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel Mon..",
@@ -306,7 +305,7 @@ let specialVersion = [
       "https://opencart.templatemela.com/OPCADD2/OPC043/image/cache/catalog/11-220x278.jpg",
   },
   {
-    id:2,
+    id: 2,
     title: "Phasellus Sit Amet Urna",
     description:
       "Canon's press material for the EOS 5D states that it 'defines (a) new D-SLR category', while we're n..",
@@ -334,24 +333,23 @@ let specialVersion = [
 //console.log("hello");
 
 // function to hide navbar items
-  let hideNavBar = function hideNavbarItems() {
-    // get the narbar item element
-    let navbarItems = document.querySelector(".dropdown-navbar");
-    //console.log(navbarItems);
-   navbarItems.classList.toggle("d-none");
-   // Get the down and up arrow elements
-   let downArrow = document.querySelector(".fa-chevron-down");
-   let upArrow = document.querySelector(".fa-chevron-up");
+let hideNavBar = function hideNavbarItems() {
+  // get the narbar item element
+  let navbarItems = document.querySelector(".dropdown-navbar");
+  //console.log(navbarItems);
+  navbarItems.classList.toggle("d-none");
+  // Get the down and up arrow elements
+  let downArrow = document.querySelector(".fa-chevron-down");
+  let upArrow = document.querySelector(".fa-chevron-up");
 
-   // Toggle the visibility of the arrows
-   downArrow.classList.toggle("d-none");
-   upArrow.classList.toggle("d-none");
-    //console.log("Test");
-  }
-
+  // Toggle the visibility of the arrows
+  downArrow.classList.toggle("d-none");
+  upArrow.classList.toggle("d-none");
+  //console.log("Test");
+};
 
 let tabdata = function () {
- //let tab = document.getElementById("myTabContent");
+  //let tab = document.getElementById("myTabContent");
   let latest = document.getElementById("latest");
   displayTabData(latestVersion, "latest");
 
@@ -380,14 +378,22 @@ function displayTabData(data, id) {
         <p class="price">$${datatab.price.toFixed(2)}
           ${
             datatab.priceBeforeSale
-              ? `<span class="price-before-sale text-decoration-line-through text-secondary">$${datatab.priceBeforeSale.toFixed(2)}</span>`
+              ? `<span class="price-before-sale text-decoration-line-through text-secondary">$${datatab.priceBeforeSale.toFixed(
+                  2
+                )}</span>`
               : ""
           }
         </p>
         <p>Ex Tax: $${datatab.exTax.toFixed(2)}</p>
         <div class="product-buttons">
-          <button class="btn btn-primary add-to-cart" data-id="${datatab.id}" onclick="addToCart(${datatab.id})">Add to Cart</button>
-          <button class="btn btn-secondary quick-view" data-id="${datatab.id}" onclick="showQuickView(${datatab.id})"><i class="fa-regular fa-eye"></i></button>
+          <button class="btn btn-secondary add-to-cart" data-id="${
+            datatab.id
+          }" onclick="addToCart(${datatab.id})">Add to Cart</button>
+          <button class="btn btn-transparent quick-view" data-id="${
+            datatab.id
+          }" onclick="showQuickView(${
+      datatab.id
+    })"><i class="fa-regular fa-eye"></i></button>
         </div>
       </div>
     `;
@@ -400,113 +406,160 @@ function displayTabData(data, id) {
 }
 
 tabdata();
+//get current tab
+let currentTab = "latest"; // Default tab
+
+// Listen for tab change events to update the currentTab value
+document.querySelectorAll('button[data-bs-toggle="tab"]').forEach((tab) => {
+  tab.addEventListener("shown.bs.tab", (event) => {
+    // Get the ID of the active tab's target
+    currentTab = event.target.getAttribute("data-bs-target").replace("#", "");
+  });
+});
 
 // Function to add product to the cart
 function addToCart(productId) {
-  const product = specialVersion.find(item => item.id === productId);
+  let nbrOfCart=0;
+  let product = [];
+  if (currentTab === "latest") {
+    product = latestVersion.find((item) => item.id === productId);
+  } else if (currentTab === "bestseller") {
+    product = bestsellerVersion.find((item) => item.id === productId);
+  } else if (currentTab === "special") {
+    product = specialVersion.find((item) => item.id === productId);
+  }
   if (product) {
     cart.push(product);
     alert(`${product.title} has been added to the cart!`);
-    updateCartPreview();
+    
+
+        // updateCartPreview();
   }
+  //update nbr of products
+  let nbrOfCartspan = document.getElementById("nbrOfcart");
+  nbrOfCartspan.innerHTML = `(${cart.length})`;
+
   //print cart
   console.log(cart);
   console.log(cart.length);
-
-
 }
 
 // Function to update cart preview
 function updateCartPreview() {
-  const cartPreview = document.getElementById('cartPreview');
-  cartPreview.innerHTML = cart.map(item => `
+  const cartPreview = document.getElementById("cartPreview");
+  cartPreview.innerHTML = cart.map(
+      (item) => `
     <div>
       <h5>${item.title}</h5>
       <p>$${item.price.toFixed(2)}</p>
     </div>
-  `).join('');
+  `
+    )
+    .join("");
 }
 
 // Function to show Quick View modal with product details
-function showQuickView(data,productId) {
-  const product = data.find(item => item.id === productId);
+function showQuickView(productId) {
+  let product = [];
+  if (currentTab === "latest") {
+    product = latestVersion.find((item) => item.id === productId);
+  } else if (currentTab === "bestseller") {
+    product = bestsellerVersion.find((item) => item.id === productId);
+  } else if (currentTab === "special") {
+    product = specialVersion.find((item) => item.id === productId);
+  }
   if (product) {
     // Update modal content dynamically
-    const modalContent = document.getElementById('quickViewContent');
+    const modalContent = document.getElementById("quickViewContent");
+    console.log(modalContent);
     modalContent.innerHTML = `
       <img src="${product.img}" alt="${product.title}" class="img-fluid">
       <h3>${product.title}</h3>
       <p>${product.description}</p>
       <p>Category: ${product.category} - ${product.categoryType}</p>
       <p class="price">$${product.price.toFixed(2)}
-        ${product.priceBeforeSale ? `<span class="price-before-sale text-decoration-line-through text-secondary">$${product.priceBeforeSale.toFixed(2)}</span>` : ''}
+        ${
+          product.priceBeforeSale
+            ? `<span class="price-before-sale text-decoration-line-through text-secondary">$${product.priceBeforeSale.toFixed(
+                2
+              )}</span>`
+            : ""
+        }
       </p>
       <p>Ex Tax: $${product.exTax.toFixed(2)}</p>
     `;
 
     // Show the modal
-    const myModal = new bootstrap.Modal(document.getElementById('quickViewModal'));
+    const myModal = new bootstrap.Modal(
+      document.getElementById("quickViewModal")
+    );
     myModal.show();
-    
+    let title = document.querySelector(".modal-title");
+    console.log(title);
+
+    title.innerHTML= `${product.title} Detail Modal`;
+
     // Add to Cart from modal
-    document.getElementById('addToCartModalBtn').onclick = () => addToCart(product.id);
+    document.getElementById("addToCartModalBtn").onclick = () =>
+      addToCart(product.id);
   }
 }
 // view cart data
 
-
 //countdown js
-let countDownDatefunction = function() {
+let countDownDatefunction = function () {
+  var countDownDate = new Date("Jan 5, 2025 00:00:00").getTime();
 
-    var countDownDate = new Date("Jan 5, 2025 00:00:00").getTime();
-    
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-    
-      // Get today's date and time
-      var now = new Date().getTime();
-        
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-        
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-      // Output the result in an element with id
-      document.getElementById("days").innerHTML = days + " Days ";
-      document.getElementById("hours").innerHTML = hours + " h ";
-      document.getElementById("minutes").innerHTML = minutes + " m ";
-      document.getElementById("seconds").innerHTML = seconds + "s ";
-        
-    
-      // If the count down is over, write some text 
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "Sale is Over!";
-      }
-    }, 1000);
+  // Update the count down every 1 second
+  var x = setInterval(function () {
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id
+    document.getElementById("days").innerHTML = days + " Days ";
+    document.getElementById("hours").innerHTML = hours + " h ";
+    document.getElementById("minutes").innerHTML = minutes + " m ";
+    document.getElementById("seconds").innerHTML = seconds + "s ";
+
+    // If the count down is over, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "Sale is Over!";
     }
-    
-    // Call the countDownDate function
-    
-    countDownDatefunction();
+  }, 1000);
+};
 
+// Call the countDownDate function
 
-    // function to return Fork Category
-    function returnForkCategory(categoryTypes) {
-        const forkCategory = categoryTypes.filter(category => category.categoryType === "Fork");
-        console.log(forkCategory);
-        return forkCategory; // Add a return statement to return the filtered result
-    };
-    returnForkCategory(sautePan);
-    // function to return Fork Category
-    function returnCupCategory(categoryTypes) {
-        const cupCategory = categoryTypes.filter(category => category.categoryType === "Cup");
-        console.log(cupCategory);
-        return cupCategory; // Add a return statement to return the filtered result
-    };
+countDownDatefunction();
 
-    returnCupCategory(sautePan);
+// function to return Fork Category
+function returnForkCategory(categoryTypes) {
+  const forkCategory = categoryTypes.filter(
+    (category) => category.categoryType === "Fork"
+  );
+  console.log(forkCategory);
+  return forkCategory; // Add a return statement to return the filtered result
+}
+returnForkCategory(sautePan);
+// function to return Fork Category
+function returnCupCategory(categoryTypes) {
+  const cupCategory = categoryTypes.filter(
+    (category) => category.categoryType === "Cup"
+  );
+  console.log(cupCategory);
+  return cupCategory; // Add a return statement to return the filtered result
+}
+
+returnCupCategory(sautePan);

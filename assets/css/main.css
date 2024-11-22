@@ -208,3 +208,23 @@ width:23%;
   background: #b8b5b5;
   border-radius: 50%;
 }
+
+
+form {
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Center items vertically */
+  gap: 10px; /* Optional: Adds spacing between elements */
+}
+
+.form-group {
+  margin: 0; /* Remove default margin */
+  flex: 1; /* Optional: Makes the input field grow to fill space */
+}
+
+.form-control {
+  width: 100%; /* Ensure the input field takes up available space */
+}
+
+.btn {
+  white-space: nowrap; /* Prevents button text from wrapping */
+}
