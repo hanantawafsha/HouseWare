@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Layout</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom Styles */
+    .navbar-custom {
+      background-color: black;
+      padding: 10px 20px;
+    }
+    .navbar-custom .btn-category {
+      background-color: #d71a1a;
+      color: white;
+      border-radius: 0;
+      font-weight: bold;
+    }
+    .navbar-custom .btn-category:hover {
+      background-color: #c21818;
+    }
+    .navbar-custom .search-bar input {
+      border-radius: 0;
+    }
+    .navbar-custom .search-bar button {
+      background-color: #d71a1a;
+      border: none;
+      border-radius: 0;
+    }
+    .navbar-custom .cart {
+      display: flex;
+      align-items: center;
+      color: white;
+      font-size: 16px;
+    }
+    .navbar-custom .cart i {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container p-0">
+    <nav class="navbar navbar-custom d-flex justify-content-between align-items-center">
+      <!-- Shop By Category Button -->
+      <button class="btn btn-category px-4 py-2">
+        Shop By Category
+        <i class="fa-solid fa-chevron-down ml-2"></i>
+      </button>
+
+      <!-- Search Bar -->
+      <div class="search-bar d-flex flex-grow-1 mx-3">
+        <form class="d-flex w-100">
+          <input class="form-control" type="text" placeholder="SEARCH" aria-label="Search">
+          <button class="btn" type="submit">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+          </button>
+        </form>
+      </div>
+
+      <!-- Cart Section -->
+      <div class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>(0)</span>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Bootstrap and FontAwesome JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
