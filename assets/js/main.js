@@ -406,9 +406,15 @@ function displayTabData(data, id) {
 }
 
 tabdata();
+
+// cart review js 
 //get current tab
 let currentTab = "latest"; // Default tab
-
+//get cart reivew elements
+const cartDisplay = document.getElementById("cartDisplay");
+const cartItemsList = document.getElementById("cartItems");
+const cartPreview = document.getElementById("cartPreview");
+let nbrOfCartspan = document.getElementById("nbrOfcart");
 // Listen for tab change events to update the currentTab value
 document.querySelectorAll('button[data-bs-toggle="tab"]').forEach((tab) => {
   tab.addEventListener("shown.bs.tab", (event) => {
@@ -417,10 +423,10 @@ document.querySelectorAll('button[data-bs-toggle="tab"]').forEach((tab) => {
   });
 });
 
-// Function to add product to the cart
+// Function to add a product to the cart
 function addToCart(productId) {
-  let nbrOfCart=0;
   let product = [];
+  // Find the product in the corresponding version array
   if (currentTab === "latest") {
     product = latestVersion.find((item) => item.id === productId);
   } else if (currentTab === "bestseller") {
@@ -433,31 +439,57 @@ function addToCart(productId) {
     alert(`${product.title} has been added to the cart!`);
     
 
-        // updateCartPreview();
+       updateCartPreview();
   }
-  //update nbr of products
-  let nbrOfCartspan = document.getElementById("nbrOfcart");
-  nbrOfCartspan.innerHTML = `(${cart.length})`;
-
+  
+// Update the cart count display
+nbrOfCartspan.innerHTML = `(${cart.length})`;
   //print cart
   console.log(cart);
   console.log(cart.length);
 }
 
+// Function to toggle the cart display
+
+function toggleCartDisplay() {
+  cartDisplay.classList.toggle("d-none");
+}
 // Function to update cart preview
 function updateCartPreview() {
-  const cartPreview = document.getElementById("cartPreview");
-  cartPreview.innerHTML = cart.map(
+  if (cart.length === 0) {
+    cartPreview.innerHTML = "<p>Your cart is empty.</p>";
+    return;
+  }
+
+  // Map cart items to HTML
+  cartPreview.innerHTML = cart
+    .map(
       (item) => `
-    <div>
+    <div class="cart-item">
       <h5>${item.title}</h5>
       <p>$${item.price.toFixed(2)}</p>
+      <button onclick="removeFromCart(${item.id})">Remove</button>
     </div>
   `
     )
     .join("");
 }
-
+// Function to remove an item from the cart
+function removeFromCart(productId) {
+  // Find the product in the cart by its ID and remove it
+  const productIndex = cart.findIndex((item) => item.id === productId);
+  if (productIndex > -1) {
+    cart.splice(productIndex, 1); // Remove the item
+    updateCartPreview(); // Refresh the cart preview
+    nbrOfCartspan.innerHTML = `(${cart.length})`; // Update cart count
+  }
+}
+// hide the cart preview when click outside of the cart preview
+document.addEventListener("click", (event) => {
+  if (!cartDisplay.contains(event.target) && !toggleCartButton.contains(event.target)) {
+    cartDisplay.classList.add("d-none");
+  }
+});
 // Function to show Quick View modal with product details
 function showQuickView(productId) {
   let product = [];
@@ -504,7 +536,6 @@ function showQuickView(productId) {
       addToCart(product.id);
   }
 }
-// view cart data
 
 //countdown js
 let countDownDatefunction = function () {

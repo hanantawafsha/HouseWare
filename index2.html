@@ -29,10 +29,7 @@
   </head>
 
   <body>
-    <div id="cartPreview " >
-      <h2 class="float-right"> test cart </h2>
-      <!-- This will show the cart preview -->
-    </div>
+   
     <!-- top header section  -->
     <nav class="topnav mt-2">
       <div class="container">
@@ -205,7 +202,7 @@
 
           <!-- Cart Section -->
           <div class="cart">
-            <button type="button" class="addToCartBtn">
+            <button type="button" class="addToCartBtn" onclick="toggleCartDisplay()">
               <i class="fa-solid fa-cart-shopping "></i>
             </button>
             
@@ -215,6 +212,16 @@
 
       </div>
     </div>
+
+       <!-- Cart Display Section -->
+       <div id="cartDisplay" class="cart-display d-none">
+        <h3>Your Cart</h3>
+        <div id="cartPreview">
+
+          <!-- Cart items will be dynamically displayed here -->
+        </div>
+      </div>
+
 
     <!-- content  -->
     <section class="content">
@@ -406,6 +413,9 @@
         </div>
       </div>
 
+
+
+
       <!-- flash sale section -->
       <section class="flash-sale-countdown">
         <div class="flash-sale-countdown-overlay ">
@@ -495,6 +505,9 @@
       <script
         src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script src="./assets/js/swipper.js"></script>
+      <!-- micromodal cdn script -->
+      
+<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
       <!-- custom script -->
       <script src="./assets/js/main.js"></script>
     </body>
