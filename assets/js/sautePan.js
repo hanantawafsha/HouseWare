@@ -185,7 +185,40 @@ let sautePan = [
     },
   ];
 
+  // loader for 1/2 secs 
+  function loader(){
+    document.addEventListener("DOMContentLoaded", function () {
+        const loader = document.getElementById("loader");
+        const mainContent = document.body;
+      
+        // Show loader for 1/2 seconds
+        setTimeout(() => {
+          loader.style.display = "none"; // Hide the loader
+          mainContent.style.display = "block"; // Show the main content
+        }, 500); // 
+      });
+  }
 
+// call loader function
+  loader();
+8// function to hide navbar items
+let hideNavBar = function hideNavbarItems() {
+    // get the narbar item element
+    let navbarItems = document.querySelector(".dropdown-navbar");
+    //console.log(navbarItems);
+    navbarItems.classList.toggle("d-none");
+    // Get the down and up arrow elements
+    let downArrow = document.querySelector(".fa-chevron-down");
+    let upArrow = document.querySelector(".fa-chevron-up");
+  
+    // Toggle the visibility of the arrows
+    downArrow.classList.toggle("d-none");
+    upArrow.classList.toggle("d-none");
+    //console.log("Test");
+  };
+  
+
+  // Add to cart functionality
   function displaySautePanData(products) {
     let htmlContent = `<div class="row">`;
   
@@ -228,7 +261,6 @@ let sautePan = [
     // Update the container's innerHTML once after the loop
     sautePanDiv.innerHTML = htmlContent;
   }
-  
   // Call the displaySautePanData function with the sautePan data
   
   displaySautePanData(sautePan);
@@ -353,6 +385,8 @@ function showQuickView(productId) {
 
   // function to return Fork Category
 function returnForkCategory() {
+    //
+    // Filter the sautePan array based on categoryType "Fork"
     const forkCategory = sautePan.filter(
       (category) => category.categoryType === "Fork"
     );
@@ -366,13 +400,18 @@ function returnForkCategory() {
   returnForkCategory(sautePan);
   // function to return Fork Category
   function returnCupCategory() {
+   
+    // Filter the sautePan array based on categoryType "Cup"
     const cupCategory = sautePan.filter(
       (category) => category.categoryType === "Cup"
     );
-    console.log(cupCategory);
+    //console.log(cupCategory);
+
     sautePanDiv.innerHTML = ``;
 
-    displaySautePanData(cupCategory);
     //console.log(cupCategory);
+    displaySautePanData(cupCategory);
+    // Call the loader function to handle loader visibility
     return cupCategory; // Add a return statement to return the filtered result
+
   }

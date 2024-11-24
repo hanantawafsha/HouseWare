@@ -320,6 +320,19 @@ let specialVersion = [
   },
 ];
 
+
+// loader for 2 secs 
+document.addEventListener("DOMContentLoaded", function () {
+  const loader = document.getElementById("loader");
+  const mainContent = document.body;
+
+  // Show loader for 2 seconds
+  setTimeout(() => {
+    loader.style.display = "none"; // Hide the loader
+    mainContent.style.display = "block"; // Show the main content
+  }, 500); // 
+});
+
 // let hoverdivs=document.querySelectorAll(".support-item");
 // console.log(hoverdivs);
 // var hoverdivArr = Array.from(hoverdivs);
@@ -536,6 +549,49 @@ function showQuickView(productId) {
       addToCart(product.id);
   }
 }
+
+//countdown js
+let countDownDatefunction = function () {
+  var countDownDate = new Date("Jan 5, 2025 00:00:00").getTime();
+
+  // Update the count down every 1 second
+  var x = setInterval(function () {
+    // Get today's date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id
+    document.getElementById("days").innerHTML = days + " Days ";
+    document.getElementById("hours").innerHTML = hours + " h ";
+    document.getElementById("minutes").innerHTML = minutes + " m ";
+    document.getElementById("seconds").innerHTML = seconds + "s ";
+
+    // If the count down is over, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("demo").innerHTML = "Sale is Over!";
+    }
+  }, 1000);
+};
+
+// Call the countDownDate function
+
+countDownDatefunction();
+
+
+
+
+
 
 
 
