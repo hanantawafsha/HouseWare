@@ -236,111 +236,80 @@ width:23%;
     no-repeat scroll left center transparent;
 }
 
-.footer {
-  background-color: #f8f8f8;
-  font-family: Arial, sans-serif;
-  padding: 20px 0;
-  color: #333;
-}
-
-.footer .news-box {
-  background-color: #000;
-  color: #fff;
-  padding: 20px;
-}
-
-.footer .newsletter h5 {
-  font-weight: bold;
-}
-
-.footer .newsletter form {
+.footer-social-media {
+  width: auto;
+  height: auto;
+  background: #000000;
   display: flex;
-  align-items: center;
+    flex-wrap: wrap;
+    gap: 10px; 
 }
 
-.footer .newsletter input {
-  margin-right: 10px;
-  padding: 5px;
-  width: 300px;
+.facebook,
+.twitter,
+.google-plus,
+.linkedin {
+  
+ width: 40px;
+ height: 40px;
+    color: #ffffff;
+  transition: color 0.3s;
+  background: #b8b5b5;
+  border-radius: 50%;
 }
 
-.footer .newsletter button {
-  background-color: #ff0000;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
+
+
+form {
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Center items vertically */
+  gap: 10px; /* Optional: Adds spacing between elements */
 }
 
-.footer .content_footer_second {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
-  align-items: center;
+.form-group {
+  margin: 0; /* Remove default margin */
+  flex: 1; /* Optional: Makes the input field grow to fill space */
 }
 
-.footer .footer-logo img {
-  width: 120px;
+.form-control {
+  width: 100%; /* Ensure the input field takes up available space */
 }
 
-.footer .footer-social-media a {
-  color: #000;
-  margin: 0 5px;
-  font-size: 20px;
+.btn {
+  white-space: nowrap; /* Prevents button text from wrapping */
 }
 
-.footer .content_footer_third {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
-}
-
-.footer .content_footer_third h5 {
-  margin-bottom: 10px;
-}
-
-.footer ul {
-  list-style: none;
+.content_footer_third .column {
+  width: 22.4%;
+  margin-right: 0px;
   padding: 0;
 }
 
-.footer ul li a {
-  color: #333;
-  text-decoration: none;
+footer h5 {
+	font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+    position: relative;
+    text-transform: capitalize;
+	margin:-3px auto 10px;
+	/*line-height: 35px;*/	
+}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
 }
 
-.footer ul li a:hover {
-  text-decoration: underline;
+.address_content {
+  overflow: hidden;
+  padding-left: 0px;
+  padding-right: 65px;
+  margin-bottom: 5px;
+  line-height: 30px;
 }
 
-.footer .bottomfooter {
-  border-top: 1px solid #ddd;
-  padding: 10px 0;
-  text-align: center;
-}
-
-.footer .bottomfooter .powered {
-  font-size: 14px;
-  color: #999;
-}
-
-.footer .bottomfooter ul {
-  display: inline-flex;
-  gap: 10px;
+.footer-contact li {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-}
-
-.footer .bottomfooter ul li a {
-  color: #333;
-}
-
-.footer .payment li {
-  display: inline;
-  margin-right: 10px;
-}
-
-.footer .payment li a i {
-  font-size: 24px;
-  color: #000;
 }
