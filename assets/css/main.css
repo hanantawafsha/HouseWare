@@ -227,6 +227,11 @@ width:23%;
 }
 
 /* footer section css */
+.footer {
+  font-family: var(--main-Font), sans-serif;
+  padding: 20px 0;
+  color: #333;
+}
 .footer-container {
   width: 98%;  
     margin: 0 auto;
@@ -236,12 +241,7 @@ width:23%;
     no-repeat scroll left center transparent;
 }
 
-.footer {
-  background-color: #f8f8f8;
-  font-family: Arial, sans-serif;
-  padding: 20px 0;
-  color: #333;
-}
+
 
 .footer .news-box {
   background-color: #000;
@@ -274,7 +274,7 @@ width:23%;
 
 .footer .content_footer_second {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 20px 0;
   align-items: center;
 }
@@ -291,7 +291,7 @@ width:23%;
 
 .footer .content_footer_third {
   display: flex;
-  justify-content: space-between;
+justify-content: space-around;  
   padding: 20px 0;
 }
 
