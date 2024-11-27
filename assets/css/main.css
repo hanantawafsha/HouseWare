@@ -193,6 +193,7 @@ width:23%;
 }
 .countdown {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
   font-size: 18px;
@@ -210,6 +211,7 @@ width:23%;
 
 .flash-sale-countdown .row {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -255,6 +257,7 @@ width:23%;
 
 .footer .newsletter form {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -274,6 +277,7 @@ width:23%;
 
 .footer .content_footer_second {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 20px 0;
   align-items: center;
@@ -291,6 +295,7 @@ width:23%;
 
 .footer .content_footer_third {
   display: flex;
+  flex-wrap: wrap;
 justify-content: space-around;  
   padding: 20px 0;
 }
