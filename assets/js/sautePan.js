@@ -242,7 +242,7 @@ let hideNavBar = function hideNavbarItems() {
             }
           </p>
           <p>Ex Tax: $${product.exTax.toFixed(2)}</p>
-          <div class="product-buttons">
+          <div class="product-buttons mb-2">
             <button class="btn btn-secondary add-to-cart" data-id="${
               product.id
             }" onclick="addToCart(${product.id})">Add to Cart</button>
