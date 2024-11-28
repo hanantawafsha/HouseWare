@@ -1,5 +1,6 @@
 
 @import './base.css';
+@import './media.css';
 
 body {
   font-family: var(--main-Font);
@@ -44,9 +45,10 @@ body {
 }
 .navbar-custom {
   background-color: black;
-  padding: 10px 20px;
+  padding: 10px 2px;
 }
 .navbar-custom .btn-category {
+  width: 15%;
   background-color:var(--main-Color);;
   color: white;
   border-radius: 0;
@@ -65,6 +67,7 @@ body {
 }
 .navbar-custom .cart {
   display: flex;
+  position: relative;
   align-items: center;
   color: white;
   font-size: 16px;
@@ -74,6 +77,16 @@ body {
 }
 
 /* cart preview section */
+
+.close-cart-btn{
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  font-size: 20px;
+  color: var(--main-Color);
+  border-radius: 50%;
+  cursor: pointer;
+}
 .cart-display {
   position: fixed; /* Fix the div on the screen */
   top: 0;          /* Align to the top of the screen */
@@ -118,11 +131,29 @@ body {
 .cart-item button:hover {
   background: darkred;
 }
-
+.navbar2 .dropdown-menu{
+  background: var(--main-Color);
+  color: #ffffff;
+  padding: 14px 0 14px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: normal;
+    width: 100%;
+}
+.navbar2 li a {
+  color: #ffffff;
+  padding: 14px 0 14px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: normal;
+    width: 100%;
+}
 /* left bar css */
 
 .left-content{
-width:23%;
+width:16%;
 }
 .nabbar-items{
   padding: 3px;
@@ -152,8 +183,10 @@ width:23%;
 /* main content css */
 
 
-
-
+/* swiper css */
+.swiper img{
+  width: 100%;
+}
 
 /* content section CSS */
 

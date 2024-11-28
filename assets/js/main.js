@@ -320,8 +320,7 @@ let specialVersion = [
   },
 ];
 
-
-// loader for 2 secs 
+// loader for 2 secs
 document.addEventListener("DOMContentLoaded", function () {
   const loader = document.getElementById("loader");
   const mainContent = document.body;
@@ -330,7 +329,7 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(() => {
     loader.style.display = "none"; // Hide the loader
     mainContent.style.display = "block"; // Show the main content
-  }, 500); // 
+  }, 500); //
 });
 
 // let hoverdivs=document.querySelectorAll(".support-item");
@@ -420,11 +419,12 @@ function displayTabData(data, id) {
 
 tabdata();
 
-// cart review js 
+// cart review js
 //get current tab
 let currentTab = "latest"; // Default tab
 //get cart reivew elements
 const cartDisplay = document.getElementById("cartDisplay");
+const toggleCartButton = document.querySelector(".toggle-cart-button");
 const cartItemsList = document.getElementById("cartItems");
 const cartPreview = document.getElementById("cartPreview");
 let nbrOfCartspan = document.getElementById("nbrOfcart");
@@ -450,13 +450,12 @@ function addToCart(productId) {
   if (product) {
     cart.push(product);
     alert(`${product.title} has been added to the cart!`);
-    
 
-       updateCartPreview();
+    updateCartPreview();
   }
-  
-// Update the cart count display
-nbrOfCartspan.innerHTML = `(${cart.length})`;
+
+  // Update the cart count display
+  nbrOfCartspan.innerHTML = `(${cart.length})`;
   //print cart
   console.log(cart);
   console.log(cart.length);
@@ -497,12 +496,10 @@ function removeFromCart(productId) {
     nbrOfCartspan.innerHTML = `(${cart.length})`; // Update cart count
   }
 }
-// hide the cart preview when click outside of the cart preview
-document.addEventListener("click", (event) => {
-  if (!cartDisplay.contains(event.target) && !toggleCartButton.contains(event.target)) {
-    cartDisplay.classList.add("d-none");
-  }
-});
+// Hide cart display when clicking (X))
+function closeCartPreview() {
+  cartDisplay.classList.add("d-none");
+}
 // Function to show Quick View modal with product details
 function showQuickView(productId) {
   let product = [];
@@ -542,7 +539,7 @@ function showQuickView(productId) {
     let title = document.querySelector(".modal-title");
     console.log(title);
 
-    title.innerHTML= `${product.title} Detail Modal`;
+    title.innerHTML = `${product.title} Detail Modal`;
 
     // Add to Cart from modal
     document.getElementById("addToCartModalBtn").onclick = () =>
@@ -587,16 +584,3 @@ let countDownDatefunction = function () {
 // Call the countDownDate function
 
 countDownDatefunction();
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,42 @@
+@media (max-width: 1224px) {
+    .left-content {
+        display: none;
+    }
+    .col-9 {
+        flex: 0 0 100%; /* Ensure col-9 takes full width */
+    }
+    .container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    /* hide Search by Category */
+    .btn-category{
+        display: none!important;
+    }
+    /* display navbar 2 */
+    .navbar2{
+        display: block !important;
+    }
+
+    .row .tabContent{
+        flex: 0 0 100%;
+    }
+    .product {
+        width:25% !important
+    }
+}
+
+/* Hide #seconds for screens <= 768px */
+@media (max-width: 768px) {
+    #seconds {
+        display: none;
+    }
+}
+
+/* Adjust layout for larger screens (>= 768px) */
+@media (min-width: 768px) {
+    .container, .container-md, .container-sm {
+        max-width: 100%;
+    }
+}
